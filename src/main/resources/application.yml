@@ -1,0 +1,20 @@
+
+
+spring:
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: LEGACYHTML5
+
+  application:
+    name: first-springboot
+  mvc:
+    static-path-pattern: /static/**  # 指定静态资源匹配路径规则
+  resources:
+    static-locations: classpath:/static/  #匹配到静态资源后去哪里找文件
+
+server:
+  port: 8080
+logging:
+  file:
+    name: springboot-log.log
